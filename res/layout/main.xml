@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical"
+	android:background="@android:color/black"
+	android:padding="8dp"
+	android:id="@+id/root">
+	<ScrollView
+		xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="56dp"
+		android:fillViewport="true">
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent">
+			<TextView  
+				android:layout_width="fill_parent" 
+				android:layout_height="wrap_content" 
+				android:id="@+id/text"
+				android:textColor="@android:color/white" />
+		</LinearLayout>
+	</ScrollView>
+	<TableLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:layout_alignParentBottom="true"
+		android:stretchColumns="0,1">
+		<TableRow
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content">  
+			<Button
+				android:id="@+id/cancel"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/cancel"
+				android:textColor="@android:color/white"/>
+			<Button
+				android:id="@+id/submit"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:text="@string/submit"
+				android:textColor="@android:color/white"/>
+		</TableRow>
+	</TableLayout>
+</RelativeLayout>
+	
